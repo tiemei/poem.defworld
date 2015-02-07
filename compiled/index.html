@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>首页</title>
+  
+    <meta name="author" content="tiemei">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/twitter/stylesheets/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
+<link href="/assets/twitter/stylesheets/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="/assets/twitter/widgets/google_prettify/stylesheets/twitter-bootstrap.css" type="text/css" rel="stylesheet" media="all">
+ 
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">tiemei（铁眉）</a>
+          <ul class="nav">
+            
+              
+
+
+  <li><a href="/archive">Archive</a></li>
+
+
+            
+              
+
+
+  <li><a href="/categories">Categories</a></li>
+
+
+            
+              
+
+
+  <li><a href="/about">About Me</a></li>
+
+
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>首页 </h1>
+</div>
+
+<div class="row">
+  <div class="span12">
+    
+<a href="/archive">技术文章</a><br />
+<a href="http://blog.sina.com.cn/u/2388250330">诗歌</a>
+<!--
+<h2>最近更新</h2>
+
+
+<div class="post">
+  <h3 class="title"><a href="/java/java%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/">java基础类型</a> <span class="date">2015-02-03</span></h3>
+
+  
+
+  <div class="more">
+    <a href="/java/java%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
+  <h3 class="title"><a href="/DB/SQL-join/">SQL join</a> <span class="date">2015-01-21</span></h3>
+
+  
+
+  <div class="more">
+    <a href="/DB/SQL-join/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
+  <h3 class="title"><a href="/java/%E4%B8%80%E5%8F%A5%E8%AF%9D%E8%A1%A8%E8%BE%BE%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">一句话表达设计模式</a> <span class="date">2015-01-16</span></h3>
+
+  <p><a href="http://ifeve.com/java-example-of-observer-pattern/">观察者模式</a>：分订阅者、发布者，发布者发布消息给多个订阅者</p>
+
+<p><a href="http://ifeve.com/java-example-of-strategy-pattern/">策略模式</a>：只有运行时才知道会走哪个策略。if-else也能实现，建议将策略抽象出一个接口，运行时决定走哪个实现。<br />
+<a href="http://ifeve.com/state-design-pattern-in-java-example-tutorial/">状态模式</a>：将一段逻辑委托给另一个对象处理，但是在代码编写时就确定走哪个对象处理，建议抽象一个接口。</p>
+
+<p><a href="http://ifeve.com/template-method-design-pattern/">模板模式</a>：定义做一件事情的步骤，但不具体实现。一般在父类定义做一件事情需要调用哪几个步骤。<br />
+<a href="http://ifeve.com/java-example-of-decorator-pattern/">装饰者模式</a>：因为多个因素构成了一个类，这些因素自由组合时个数比较多，需要将其中一部分因素抽出来作为一个类，抽出来的类和原来的类组合构成一个综合类。典型例子java IO库。</p>
+
+<p><a href="http://ifeve.com/memento-design-pattern-in-java-example-tutorial/">备忘录模式</a>：</p>
+
+
+  <div class="more">
+    <a href="/java/%E4%B8%80%E5%8F%A5%E8%AF%9D%E8%A1%A8%E8%BE%BE%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
+  <h3 class="title"><a href="/java/java%E5%B0%8F%E8%B4%B4%E5%A3%AB-1/">java小贴士-1</a> <span class="date">2015-01-06</span></h3>
+
+  <h1><a style="display: block;" name="java中的双括号反模式（double-curly-braces-anti-pattern）" href="#java中的双括号反模式（double-curly-braces-anti-pattern）"></a>java中的双括号反模式（Double Curly Braces Anti Pattern）</h1>
+
+<pre><code class="java">Map map = new HashMap() {{
+    put(&quot;&quot;, &quot;&quot;)
+}};
+</code></pre>
+
+<p>这种双括号反模式会创建一个HashMap的匿名子类，然后用双括号里的内容初始化这个子类。并且每次都是新的子类。有两个问题：</p>
+
+<ul>
+<li>如果有大量的这种用法，会产生大量的匿名内部类</li>
+<li>匿名内部类对应对象，会持有对外部对象的引用，如果处理不好，加上外部对象比较中，容易造成内存泄露。<br /></li>
+</ul>
+
+<p>结论：</p>
+
+<ol>
+<li>内部类是一头野兽。它已经造成过许多的问题以及认知失衡。匿名内部类则更为严重</li>
+<li>不要自作聪明了，别使用双括号来进行初始化</li>
+</ol>
+
+<p>参考:</p>
+
+<p>《切勿自作聪明，慎用双括号反模式》http://it.deepinmind.com/java/<sup>2014</sup>&frasl;<sub>12</sub>/12/dont-be-clever-the-double-curly-braces-anti-pattern.html</p>
+
+<h1><a style="display: block;" name="java中完美的单例" href="#java中完美的单例"></a>java中完美的单例</h1>
+
+
+  <div class="more">
+    <a href="/java/java%E5%B0%8F%E8%B4%B4%E5%A3%AB-1/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
+  <h3 class="title"><a href="/Distributed-Programming/zookeeper---%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/">zookeeper - 负载均衡</a> <span class="date">2014-12-26</span></h3>
+
+  
+
+  <div class="more">
+    <a href="/Distributed-Programming/zookeeper---%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
+  <h3 class="title"><a href="/SQL/%E7%AC%94%E8%AE%B0--SQL/">笔记 -SQL</a> <span class="date">2014-12-19</span></h3>
+
+  <p>参考：</p>
+
+<p>《图解SQL的Join》http://coolshell.cn/articles/3463.html</p>
+
+
+  <div class="more">
+    <a href="/SQL/%E7%AC%94%E8%AE%B0--SQL/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
+  <h3 class="title"><a href="/other/%E8%AE%A1%E7%AE%97%E6%9C%BA%E3%80%81%E7%BC%96%E7%A8%8B%E6%9C%AF%E8%AF%AD%E8%A7%A3%E9%87%8A/">计算机、编程术语解释</a> <span class="date">2014-12-19</span></h3>
+
+  <h1><a style="display: block;" name="soa" href="#soa"></a>SOA</h1>
+
+<blockquote>
+<p>“取乎其上，得乎其中；取乎其中，得乎其下；取乎其下，则无所得矣” —— 孔子</p>
+</blockquote>
+
+<p>参考：</p>
+
+<p>SOA wiki : <a href="http://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%9E%B6%E6%9E%84">http://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%9E%B6%E6%9E%84</a><br />
+微观SOA：服务设计原则及其实践方式（上篇）: <a href="http://www.infoq.com/cn/articles/micro-soa-1">http://www.infoq.com/cn/articles/micro-soa-1</a><br />
+微观SOA：服务设计原则及其实践方式（下篇）：http://www.infoq.com/cn/articles/micro-soa-2?utm_source=infoq&amp;utm_medium=related_content_link&amp;utm_campaign=relatedContent_articles_clk</p>
+
+<p>面向服务的体系结构（Service-oriented architecture）是构造分布式计算的应用程序的方法。它将应用程序功能作为服务发送给最终用户或者其他服务。<br />
+当当网架构师沈理把SOA分为“宏观SOA”、“微观SOA”，宏观SOA考虑的东西比较大，而微观的比较容易实施落地。至于微观SOA的原则可能需要在实践中总结，沈理给出了他的最佳实践原则：</p>
+
+<ul>
+<li>服务设计原则1：优化远程调用</li>
+<li>服务设计原则2：消除冗余数据</li>
+<li>服务设计原则3：粗粒度契约</li>
+<li>服务设计原则4：通用契约</li>
+<li>服务设计原则5：隔离变化</li>
+<li>服务设计原则6：契约先行</li>
+<li>服务设计原则7：稳定和兼容的契约</li>
+<li>服务设计原则8：契约包装<br /></li>
+</ul>
+
+
+  <div class="more">
+    <a href="/other/%E8%AE%A1%E7%AE%97%E6%9C%BA%E3%80%81%E7%BC%96%E7%A8%8B%E6%9C%AF%E8%AF%AD%E8%A7%A3%E9%87%8A/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
+  <h3 class="title"><a href="/java/%E7%AC%94%E8%AE%B0---java-annotation/">笔记 - java annotation</a> <span class="date">2014-12-18</span></h3>
+
+  <h1><a style="display: block;" name="分类" href="#分类"></a>分类</h1>
+
+<p>java annotation主要分为以下几类：</p>
+
+<ul>
+<li>Compiler instructions</li>
+<li>Build-time instructions</li>
+<li>Runtime instructions</li>
+</ul>
+
+<p>Compiler instructions比如Java&rsquo;s Builtin Annotations，give instructions to the Java compiler：</p>
+
+<ul>
+<li>@Deprecated</li>
+<li>@Override</li>
+<li>@SuppressWarnings</li>
+</ul>
+
+<p>The build process includes generating source code, compiling the source, generating XML files (e.g. deployment descriptors), packaging the compiled code and files into a JAR file etc. Building the software is typically done by an automatic build tool like Apache Ant or Apache Maven. Build tools may scan your Java code for specific annotations and generate source code or other files based on these annotations. Build-time instructions比如</p>
+
+<h1><a style="display: block;" name="构成" href="#构成"></a>构成</h1>
+
+
+  <div class="more">
+    <a href="/java/%E7%AC%94%E8%AE%B0---java-annotation/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
+  <h3 class="title"><a href="/Concurrent Programming/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B---%E9%94%81/">并发编程 - 锁</a> <span class="date">2014-12-18</span></h3>
+
+  <h1><a style="display: block;" name="饥饿和公平" href="#饥饿和公平"></a>饥饿和公平</h1>
+
+<p>饥饿是说某个线程总是被其他线程抢走CPU运行时间，而公平指所有的线程都能公平的获得运行机会。<br />
+如果是使用synchronized同步块，不能保证某个线程一定获得运行机会，所以需要使用锁。锁的实现里可以自己控制唤醒时的机会分配。理论上Java不能实现100%公平。</p>
+
+<h1><a style="display: block;" name="自旋锁" href="#自旋锁"></a>自旋锁</h1>
+
+<p>自旋锁是采用让当前线程不停地在循环体内执行实现的。</p>
+
+<h1><a style="display: block;" name="阻塞锁" href="#阻塞锁"></a>阻塞锁</h1>
+
+<p>阻塞锁，与自旋锁不同，改变了线程的运行状态。<br />
+阻塞锁的优势在于，阻塞的线程不会占用cpu时间，不会导致。CPU占用率过高，但进入时间以及恢复时间都要比自旋锁略慢。在竞争激烈的情况下 阻塞锁的性能要明显高于 自旋锁。<br />
+理想的情况则是; 在线程竞争不激烈的情况下，使用自旋锁，竞争激烈的情况下使用，阻塞锁。</p>
+
+<h1><a style="display: block;" name="可重入锁" href="#可重入锁"></a>可重入锁</h1>
+
+<p>可重入锁，也叫做递归锁，指的是同一线程外层函数获得锁之后，内层递归函数仍然有获取该锁的代码，等到其他线程unlock时，这个线程能够从这个锁里出来。</p>
+
+
+  <div class="more">
+    <a href="/Concurrent Programming/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B---%E9%94%81/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
+  <h3 class="title"><a href="/DB/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%94%E8%AE%B0/">关系型数据库笔记</a> <span class="date">2014-12-05</span></h3>
+
+  <h1><a style="display: block;" name="1nf-2nf-3nf-..." href="#1nf-2nf-3nf-..."></a>1NF 2NF 3NF &hellip;</h1>
+
+<p>范式（NF）：一张数据表的表结构所符合的某种设计标准的级别。要求逐级提高，而高级的同时满足低级的。</p>
+
+<h2><a style="display: block;" name="1nf" href="#1nf"></a>1NF</h2>
+
+<p><img src="https://farm9.staticflickr.com/8616/15925324316_09846f9765_z.jpg" alt="1NF" />
+</p>
+
+<p>如上图进货和销售又细分了属性，不满足1NF。<br />
+每个属性都不可再分。因为真实的DB每列都不可再分的，所以能存到真实DB里就说明满足1NF。</p>
+
+<h2><a style="display: block;" name="2nf" href="#2nf"></a>2NF</h2>
+
+<p><img src="https://farm8.staticflickr.com/7495/15786427597_96178e86ab.jpg" alt="2NF" />
+</p>
+
+<p>如上图，满足1NF，但存在以下问题：</p>
+
+<ol>
+<li>每一名学生的学号、姓名、系名、系主任这些数据重复多次。每个系与对应的系主任的数据也重复多次——<strong>数据冗余过大</strong></li>
+<li>新建一个系，无法将系名与系主任的数据单独添加到数据库——<strong>插入异常</strong></li>
+<li>删除某个系所欲学生记录，这个系的数据被删除掉 —— <strong>删除异常</strong></li>
+<li>某同学转系，需要修改三条记录 —— <strong>修改异常</strong></li>
+</ol>
+
+
+  <div class="more">
+    <a href="/DB/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%94%E8%AE%B0/" class="btn">read more..</a>
+  </div>
+</div>
+
+-->
+
+  </div>
+</div>
+
+      </div>
+
+      <footer>
+        <p>&copy; tiemei 2013 
+          with help from <a href="http://github.com/wendal/gor" target="_blank" title="Gor -- Fast Blog">Gor</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+		  and Idea from <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+<script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+
+    
+<script>
+    var _gaq=[['_setAccount','UA-123-12'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+  </body>
+</html>
