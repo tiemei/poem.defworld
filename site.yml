@@ -1,0 +1,14 @@
+title : tiemei（铁眉）
+tagline: Blog Tagline
+author :
+  name : tiemei
+  email : jiadongkai@gmail.com
+  github : tiemei
+  twitter : 顽固的卡夫卡
+  feedburner : feedname
+
+navigation :
+  - archive.html
+  - categories.html
+  - about.md
+  
