@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>run &amp; debug node.js</title>
+    <title>sequel pro 快捷键</title>
   
     <meta name="author" content="tiemei">
 
@@ -64,92 +64,50 @@
 
       <div class="content">
         <div class="page-header">
-  <h1>run &amp; debug node.js </h1>
+  <h1>sequel pro 快捷键 </h1>
 </div>
 
 <div class="row">
   <div class="span8">
-    <h1><a style="display: block;" name="debug-node.js" href="#debug-node.js"></a>debug node.js</h1>
-
-<ol>
-<li><code>sudo npm install -g node-inspector</code></li>
-<li><code>node-debug xxx.js</code></li>
-<li>set breakpoints</li>
-<li>request &amp; break auto</li>
-</ol>
-
-<p><strong>shortcuts</strong></p>
-
-<ul>
-<li>Resume script execution (F8): 继续执行</li>
-<li>Step over next function call (F10): 按步执行，不进入另一个函数</li>
-<li>Step into next function call (F11): 按步执行，进入另一个函数内部</li>
-
-<li><p>Step out of current functino (⇧ F11): 跳出当前函数，进入父函数</p></li>
-
-<li><p><code>⌘ o</code> find file</p></li>
-
-<li><p><code>⇧ ⌘ o</code> find function member in current file</p></li>
+    <ul>
+<li><code>⇧ ⌘ D</code>Choose Database</li>
+<li><code>⌃ W</code> select current word</li>
+<li><code>⌃ L</code> select current line</li>
 </ul>
 
-<p><strong>other</strong></p>
+<h2><a style="display: block;" name="table-content-tab" href="#table-content-tab"></a>Table Content Tab</h2>
 
 <ul>
-<li>可给断点设置条件</li>
-<li>可通过console查看当前断点下上下文状态</li>
-<li>Pause on exception 可选择打开或关闭</li>
-<li>可打开左侧源码窗口，保持两边窗口的同步</li>
+<li><code>⌦</code> delete selected row(s)</li>
+<li><code>⌥ ⌘ A</code> add a new row</li>
+<li><code>⌘ D</code> duplicate selected row</li>
+<li><code>⌘ R</code> refresh tabble contents</li>
 </ul>
 
-<h1><a style="display: block;" name="run-node.js" href="#run-node.js"></a>run node.js</h1>
-
-<h2><a style="display: block;" name="用[node-dev](https://github.com/fgnass/node-dev)做文件热加载" href="#用[node-dev](https://github.com/fgnass/node-dev)做文件热加载"></a>用<a href="https://github.com/fgnass/node-dev">node-dev</a>做文件热加载</h2>
-
-<p><strong>准备工作</strong></p>
-
-<pre><code class="bash">npm install -g node-dev
-# 你也可以选择Growl or libnotify，osX可以内置的提醒器
-sudo gem install terminal-notifier
-</code></pre>
-
-<p><strong>开始吧</strong></p>
-
-<p><code>node-dev foo.js</code><br />
-可用两个选项：</p>
+<h2><a style="display: block;" name="custom-query-tab" href="#custom-query-tab"></a>Custom Query Tab</h2>
 
 <ul>
-<li><code>--no-deps</code> Watch only the project&rsquo;s own files and linked modules (via <code>npm link</code>)</li>
-<li><code>--all-deps</code> Watch the whole dependency tree</li>
+<li><code>⌘ R</code> Run current query or selection</li>
+<li><code>⌘ /</code> (Un)Comment line or selection</li>
+<li><code>⌃ H</code> Show MySQL help for current word or selection</li>
+<li><code>⌥ ⌘ 1</code> Show all database names as completion list</li>
+<li><code>⌥ ⌘ 2</code> Show all table and view names as completion list</li>
+<li><code>⌥ ⌘ 3</code> Show all table names from current database as completion list</li>
 </ul>
-
-<p>By default node-dev will watch all first-level dependencies, i.e. the ones in the project&rsquo;s node_modulesfolder.</p>
-
-<p><strong>其他</strong></p>
-
-<ul>
-<li>CoffeeScript这样的翻译成js的语言也可以用这个工具</li>
-<li>还有其他高级配置项可供选择</li>
-<li>如果子进程需要重启，会发一个<code>SIGTERM</code>信号，如果你的代码没有处理这些
-信号，<code>process.exit(0)</code>就会被强行调用</li>
-</ul>
-
-<p>参考：<br />
-<a href="https://developer.chrome.com/devtools/docs/javascript-debugging?csw=1">Debugging JavaScript</a><br />
-<a href="http://docs.strongloop.com/display/DOC/Debugging+with+Node+Inspector#DebuggingwithNodeInspector-Keyboardshortcuts">Debugging with Node Inspector</a></p>
 
     <hr>
     <div class="pagination">
       <ul>
         <ul>
           
-            <li class="prev"><a href="/Node.js/js%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="js入门笔记（二）——面向对象">&larr; Previous</a></li>
           
+            <li class="prev disabled"><a>&larr; Previous</a></li>
           
 
             <li><a href="/archive">Archive</a></li>
 
           
-            <li class="next"><a href="/C/C%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" title="C语言入门笔记">Next &rarr;</a></li>
+            <li class="next"><a href="/java/java%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/" title="java基础类型">Next &rarr;</a></li>
           
           
         </ul>
@@ -175,13 +133,13 @@ sudo gem install terminal-notifier
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>2014-06-08</span></div>
+    <div class="date"><span>2015-02-12</span></div>
     <br>
     <h4>Categories</h4>
     <ul class="tag_box">
     
       <li>
-  <a href="/categories/#Node.js-ref">Node.js <span>10</span></a>
+  <a href="/categories/#tool-ref">tool <span>8</span></a>
 </li>
     
     </ul>
