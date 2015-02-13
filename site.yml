@@ -8,7 +8,5 @@ author :
   feedburner : feedname
 
 navigation :
+  - index.md
   - archive.html
-  - categories.html
-  - about.md
-  

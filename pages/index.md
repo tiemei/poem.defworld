@@ -1,6 +1,6 @@
 ---
-title : About Me
-description:
+title : 关于我
+description: '顽固的卡夫卡 介绍'
 ---
 
 ![黄山归途](https://farm8.staticflickr.com/7456/16330481569_8e5ba6b9eb.jpg)  
