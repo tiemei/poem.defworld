@@ -31,7 +31,7 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/">tiemei（铁眉）</a>
+          <a class="brand" href="/">顽固的卡夫卡</a>
           <ul class="nav">
             
               
@@ -246,34 +246,6 @@
 </div>
 
 <div class="post">
-  <h3 class="title"><a href="/Concurrent Programming/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B---%E9%94%81/">并发编程 - 锁</a> <span class="date">2014-12-18</span></h3>
-
-  <h1><a style="display: block;" name="饥饿和公平" href="#饥饿和公平"></a>饥饿和公平</h1>
-
-<p>饥饿是说某个线程总是被其他线程抢走CPU运行时间，而公平指所有的线程都能公平的获得运行机会。<br />
-如果是使用synchronized同步块，不能保证某个线程一定获得运行机会，所以需要使用锁。锁的实现里可以自己控制唤醒时的机会分配。理论上Java不能实现100%公平。</p>
-
-<h1><a style="display: block;" name="自旋锁" href="#自旋锁"></a>自旋锁</h1>
-
-<p>自旋锁是采用让当前线程不停地在循环体内执行实现的。</p>
-
-<h1><a style="display: block;" name="阻塞锁" href="#阻塞锁"></a>阻塞锁</h1>
-
-<p>阻塞锁，与自旋锁不同，改变了线程的运行状态。<br />
-阻塞锁的优势在于，阻塞的线程不会占用cpu时间，不会导致。CPU占用率过高，但进入时间以及恢复时间都要比自旋锁略慢。在竞争激烈的情况下 阻塞锁的性能要明显高于 自旋锁。<br />
-理想的情况则是; 在线程竞争不激烈的情况下，使用自旋锁，竞争激烈的情况下使用，阻塞锁。</p>
-
-<h1><a style="display: block;" name="可重入锁" href="#可重入锁"></a>可重入锁</h1>
-
-<p>可重入锁，也叫做递归锁，指的是同一线程外层函数获得锁之后，内层递归函数仍然有获取该锁的代码，等到其他线程unlock时，这个线程能够从这个锁里出来。</p>
-
-
-  <div class="more">
-    <a href="/Concurrent Programming/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B---%E9%94%81/" class="btn">read more..</a>
-  </div>
-</div>
-
-<div class="post">
   <h3 class="title"><a href="/java/%E7%AC%94%E8%AE%B0---java-annotation/">笔记 - java annotation</a> <span class="date">2014-12-18</span></h3>
 
   <h1><a style="display: block;" name="分类" href="#分类"></a>分类</h1>
@@ -301,6 +273,34 @@
 
   <div class="more">
     <a href="/java/%E7%AC%94%E8%AE%B0---java-annotation/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
+  <h3 class="title"><a href="/Concurrent Programming/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B---%E9%94%81/">并发编程 - 锁</a> <span class="date">2014-12-18</span></h3>
+
+  <h1><a style="display: block;" name="饥饿和公平" href="#饥饿和公平"></a>饥饿和公平</h1>
+
+<p>饥饿是说某个线程总是被其他线程抢走CPU运行时间，而公平指所有的线程都能公平的获得运行机会。<br />
+如果是使用synchronized同步块，不能保证某个线程一定获得运行机会，所以需要使用锁。锁的实现里可以自己控制唤醒时的机会分配。理论上Java不能实现100%公平。</p>
+
+<h1><a style="display: block;" name="自旋锁" href="#自旋锁"></a>自旋锁</h1>
+
+<p>自旋锁是采用让当前线程不停地在循环体内执行实现的。</p>
+
+<h1><a style="display: block;" name="阻塞锁" href="#阻塞锁"></a>阻塞锁</h1>
+
+<p>阻塞锁，与自旋锁不同，改变了线程的运行状态。<br />
+阻塞锁的优势在于，阻塞的线程不会占用cpu时间，不会导致。CPU占用率过高，但进入时间以及恢复时间都要比自旋锁略慢。在竞争激烈的情况下 阻塞锁的性能要明显高于 自旋锁。<br />
+理想的情况则是; 在线程竞争不激烈的情况下，使用自旋锁，竞争激烈的情况下使用，阻塞锁。</p>
+
+<h1><a style="display: block;" name="可重入锁" href="#可重入锁"></a>可重入锁</h1>
+
+<p>可重入锁，也叫做递归锁，指的是同一线程外层函数获得锁之后，内层递归函数仍然有获取该锁的代码，等到其他线程unlock时，这个线程能够从这个锁里出来。</p>
+
+
+  <div class="more">
+    <a href="/Concurrent Programming/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B---%E9%94%81/" class="btn">read more..</a>
   </div>
 </div>
 
