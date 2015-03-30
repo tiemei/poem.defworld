@@ -8,6 +8,7 @@ categories: 'tool'
 * `⇧ ⌘ D`Choose Database
 * `⌃ W` select current word
 * `⌃ L` select current line
+* `⌃ Y` select current sql statement
 
 ## Table Content Tab
 

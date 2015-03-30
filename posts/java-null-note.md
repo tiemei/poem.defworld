@@ -76,3 +76,4 @@ String name = computer.flatMap(Computer::getSoundcard)
 *《Tired of Null Pointer Exceptions? Consider Using Java SE 8's Optional!》http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html  
 *《避免Java中的空对象检查》http://it.deepinmind.com/java/2014/08/08/avoiding-null-checks-in-java.html  
 *《[Google Guava] 1.1-使用和避免null》http://ifeve.com/google-guava-using-and-avoiding-null/  
+* 《Java中避免NPE的一些方法》http://segmentfault.com/a/1190000002477715
