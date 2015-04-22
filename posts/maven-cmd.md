@@ -18,9 +18,10 @@ tags:
 ## 常用命令
 新建一个空白工程  
 
+    不能用了：·
     mvn archetype:create -DgroupId=com.tiemei -DartifactId=p1 -DpackageName=com.tiemei.p1
     建web工程加-DarchetypeArtifactId=maven-archetype-webapp
-
+    换成：mvn archetype:generate -DgroupId=com.tiemei -DartifactId=zookeeper -DpackageName=com.tiemei.demo.zookeeper -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false·
 
 下载依赖源码  
 

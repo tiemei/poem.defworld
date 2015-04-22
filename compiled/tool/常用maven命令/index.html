@@ -78,8 +78,10 @@
 
 <p>新建一个空白工程</p>
 
-<pre><code>mvn archetype:create -DgroupId=com.tiemei -DartifactId=p1 -DpackageName=com.tiemei.p1
+<pre><code>不能用了：·
+mvn archetype:create -DgroupId=com.tiemei -DartifactId=p1 -DpackageName=com.tiemei.p1
 建web工程加-DarchetypeArtifactId=maven-archetype-webapp
+换成：mvn archetype:generate -DgroupId=com.tiemei -DartifactId=zookeeper -DpackageName=com.tiemei.demo.zookeeper -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false·
 </code></pre>
 
 <p>下载依赖源码</p>
@@ -117,7 +119,7 @@ mvn clean deploy 只发布calss jar包
             <li><a href="/archive">Archive</a></li>
 
           
-            <li class="next"><a href="/java/jdk%E8%87%AA%E5%B8%A6%E5%B7%A5%E5%85%B7/" title="jdk自带工具">Next &rarr;</a></li>
+            <li class="next"><a href="/java/java%E9%94%81%E7%AC%94%E8%AE%B0/" title="java锁笔记">Next &rarr;</a></li>
           
           
         </ul>
